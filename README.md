@@ -1,3 +1,9 @@
+<!-- The text field -->
+<input type="text" value="Hello World" id="myInput">
+
+<!-- The button used to copy the text -->
+<button onclick="myFunction()">Copy text</button>
+
 # Firenotes: Firebase Authentication on Google App Engine
 
 [![Open in Cloud Shell][shell_img]][shell_link]
