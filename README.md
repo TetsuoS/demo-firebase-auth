@@ -1,22 +1,22 @@
-<!-- The text field -->
-<input type="text" value="Hello World" id="myInput">
+<p id="targetID">この文字列をクリップボードにコピーします！</p>
 
-<!-- The button used to copy the text -->
-<button onclick="myFunction()">Copy text</button>
+document.querySelector('#btnCopy').addEventListener("click", () => {
+  const element = document.querySelector('#targetID'),
+    selection = window.getSelection(),
+    range = document.createRange();
+  range.selectNodeContents(element);
+  selection.removeAllRanges();
+  selection.addRange(range);
+  //console.log('選択された文字列: ', selection.toString());
+  const succeeded = document.execCommand('copy');
+  if (succeeded) {
+      alert('コピーが成功しました！');
+  } else {
+      alert('コピーが失敗しました!');
+  }
+  selection.removeAllRanges();
 
-function myFunction() {
-  /* Get the text field */
-  var copyText = document.getElementById("myInput");
-
-  /* Select the text field */
-  copyText.select();
-
-  /* Copy the text inside the text field */
-  document.execCommand("copy");
-
-  /* Alert the copied text */
-  alert("Copied the text: " + copyText.value);
-}
+});
 
 # Firenotes: Firebase Authentication on Google App Engine
 
