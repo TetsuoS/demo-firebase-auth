@@ -4,6 +4,20 @@
 <!-- The button used to copy the text -->
 <button onclick="myFunction()">Copy text</button>
 
+function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+
+  /* Select the text field */
+  copyText.select();
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+}
+
 # Firenotes: Firebase Authentication on Google App Engine
 
 [![Open in Cloud Shell][shell_img]][shell_link]
