@@ -2,6 +2,14 @@ Local: GCP Cloud > CloudShell > Project: mymarkdown-ceo
 https://console.cloud.google.com/home/dashboard?project=mymarkdown-ceo&folder=&organizationId=
 cd /home/administrator/python-docs-samples/appengine/standard/firebase/firenotes
 
+https://cloud.google.com/appengine/docs/standard/python/authenticating-users-firebase-appengine#adding_the_firebase_authentication_user_interface
+
+https://console.firebase.google.com/project/mymarkdown-ceo/overview?hl=ja
+
+https://www.youtube.com/watch?v=iEOVRzAwwzU&feature=youtu.be
+
+
+
 
 
 # Firenotes: Firebase Authentication on Google App Engine
