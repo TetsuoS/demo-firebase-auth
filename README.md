@@ -1,22 +1,8 @@
-<p id="targetID">この文字列をクリップボードにコピーします！</p>
+Local: GCP Cloud > CloudShell > Project: mymarkdown-ceo
+https://console.cloud.google.com/home/dashboard?project=mymarkdown-ceo&folder=&organizationId=
+cd /home/administrator/python-docs-samples/appengine/standard/firebase/firenotes
 
-document.querySelector('#btnCopy').addEventListener("click", () => {
-  const element = document.querySelector('#targetID'),
-    selection = window.getSelection(),
-    range = document.createRange();
-  range.selectNodeContents(element);
-  selection.removeAllRanges();
-  selection.addRange(range);
-  //console.log('選択された文字列: ', selection.toString());
-  const succeeded = document.execCommand('copy');
-  if (succeeded) {
-      alert('コピーが成功しました！');
-  } else {
-      alert('コピーが失敗しました!');
-  }
-  selection.removeAllRanges();
 
-});
 
 # Firenotes: Firebase Authentication on Google App Engine
 
